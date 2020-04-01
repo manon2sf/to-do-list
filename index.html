@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+        
+        <section id="listContainer">
+            <h1 class="titre">To Do List</h1>
+            <div class="container">
+                <div class="list">
+                    <p>En cours</p>
+                    <div id="toDoList">
+                        <ul></ul>     
+                    </div>
+                </div>
+                <div class="list">
+                    <p>Terminé</p>
+                    <div>
+                        <ul id="doneList"></ul>      
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <section id="contactez_nous" class="center">
+            <form id="formulaire">
+                <label for="tache"></label>
+                <input id="input" type="text" name="tache" placeholder="to do" />
+                <input  id="button" class="favorite styled" type="button" value="Ajout">
+            </form>
+        </section>
+        <!--
+        <button class="test" value="1">1</button>
+        <button class="test" value="2">2</button>
+        <button class="test" value="3">3</button>
+        <button class="test" value="4">4</button>
+        <button class="test" value="5">5</button>-->
+
+        <script type="text/javascript" src="script/script.js"></script>
+    </body>
+</html>
