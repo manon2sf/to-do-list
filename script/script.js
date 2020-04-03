@@ -15,9 +15,12 @@ buttonClik.addEventListener("click",function(e){
 
   e.preventDefault();//méthode objet event qui empêche le comportement par défaut
   
-  deleteButton.innerText="Supprimer";
-  modifyButton.innerText="Modifier";
-  moveButton.innerText="Terminé";
+  deleteButton.innerHTML= '<i class="fas fa-trash-alt"></i>';
+  deleteButton.classList.add("listButton");
+  modifyButton.innerHTML= '<i class="fas fa-edit"></i>';
+  modifyButton.classList.add("listButton");
+  moveButton.innerHTML= '<i class="fas fa-angle-double-right"></i>';
+  moveButton.classList.add("listButton");
   
   task.appendChild(inputTask); // ajout d'une zone input 
   task.appendChild(modifyButton); //ajout bouton modifier
@@ -35,6 +38,7 @@ buttonClik.addEventListener("click",function(e){
   moveButton.addEventListener("click", function(){
     doneList.appendChild(task);
     moveButton.remove();
+    modifyButton.remove();
   });
 
 

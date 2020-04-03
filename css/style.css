@@ -23,19 +23,19 @@ ul {
 
 /*style liste*/
 
-::marker {
-    content: none;
-  }
 
 #listContainer {
     height: 400px;
     background-color: linen;
     text-align: center;
     margin:60px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px #555;
 }
 
 #toDoList, #doneList{
     background-color: lightslategrey;
+    border-radius: 10px;
 }
 
 
