@@ -1,68 +1,89 @@
 /*style général*/
 
-.float-l {
-    float:left;
+body,
+html {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(243, 243, 243);
 }
 
-.container {
-    display:flex;
-    flex-direction: row;
-}
-
-.list{
-    width: 50%;
-    padding: 15px;
+h2 {
+  color: rgb(168, 0, 79);
+  font-weight: bold;
 }
 
 ul {
-    list-style-type: none;
-    margin-left:0;
-    padding-left:0;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
+.title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(119, 0, 56);
+}
+
+#mainContainer {
+  text-align: center;
+}
+
+#newTask {
+  margin-top: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
 
 /*style liste*/
 
-
-#listContainer {
-    height: 400px;
-    background-color: linen;
-    text-align: center;
-    margin:60px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 12px #555;
+.list {
+  width: 50%;
+  height: 350px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid rgb(255, 111, 59);
+  border-radius: 5px;
+  background-color: rgba(250, 140, 100, 0.281);
 }
 
-#toDoList, #doneList{
-    background-color: lightslategrey;
-    border-radius: 10px;
+ul li {
+  padding: 5px;
 }
 
+input {
+  margin-right: 10px;
+  border-color: transparent;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(247, 0, 115, 0.705);
+}
+
+button {
+  margin: 0 5px;
+}
 
 /*style du bouton*/
 .styled {
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: rgb(0, 3, 199);
-    background-image: linear-gradient(to top left,
-                                      rgba(0, 0, 0, .2),
-                                      rgba(0, 0, 0, .2) 30%,
-                                      rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(168, 0, 79);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .styled:hover {
-    background-color: rgba(0, 174, 255, 0.719);
-}
-
-.styled:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
+  background-color: rgba(247, 0, 115, 0.705);
 }
